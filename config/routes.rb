@@ -11,4 +11,13 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  get "items" => "items#index", as: "items"
+  get "items/new" => "items#new", as: "item_new"
+  get "items/edit/:id" => "items#edit", as: "edit_item"
+  get "items/:id" => "items#show", as: "item"
+  get "items/delete/:id" => "items#delete_item", as: "delete_item"
+
+  patch "items/:id" => "items#update"
+  post "items" => "items#create", as: "item_create"
 end

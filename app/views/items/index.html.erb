@@ -1,0 +1,37 @@
+<div>
+    <h1>Menu Items</h1>
+    <br/><br/><br/>
+    <a href="<%= item_new_path %>" >Add New Item</a>
+    <% if @items.present? %>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>86</th>
+                <th>Item Name</th>
+                <th>Price</th>
+                <th>Calories</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% @items.each do |item| %>
+                <tr>
+                    <td> 
+                        <% if item.eightysix %> 86 <% end %> 
+                    </td>
+                    <td><%= item.name %></td>
+                    <td><%= item.price %></td>
+                    <td><%= item.calories %></td>
+                    <td><%= item.description %></td>
+                    <td> 
+                        <a href="<%= item_path(item) %>" >Details</a> | 
+                        <a href="<%= edit_item_path(item) %>" >Edit</a> | 
+                        <a href="<%= delete_item_path(item) %>" >Delete</a>
+                    </td>
+                </tr>
+            <% end %>
+        </tbody>
+    </table>
+    <% end %>
+</div>
