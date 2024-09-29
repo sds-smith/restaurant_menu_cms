@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users, controllers: { sessions: 'users/sessions' }
 
   namespace :api do
     match '/*', controller: 'cors', action: 'cors_preflight_check', via: [:options]
@@ -20,6 +21,11 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  resources :roles
+  resources :staff_users
+  resources :dashboard, only: [:index]
+  root "dashboard#index"
 
   get "items" => "items#index", as: "items"
   get "items/new" => "items#new", as: "item_new"

@@ -19,6 +19,27 @@
   </head>
 
   <body>
+    <% flash.each do |key, value| %>
+      <div class="alert alert-<%= key %> alert-dismissible flash-message" role="alert">
+        <%= value %>
+      </div>
+    <% end %>
+    <nav class="navbar navbar-light bg-dark justify-content-between">
+      <h5 class="navbar-brand margin-left text-primary">
+        Menu CMS<br/>
+        <%= link_to 'Home', root_path %>
+      </h5>
+      <% if user_signed_in? %>
+        <a class="navbar-brand margin-left text-white">Welcome <%= current_user.username %></a>
+      <% end %>
+      <form class="form-inline">
+        <% if user_signed_in? %>
+          <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-outline-success my-2 " %>
+        <% else %>
+          <%= link_to "Sign in", new_user_session_path, class: "btn btn-outline-success my-2 my-sm-0" %>
+        <% end %>
+      </form>
+    </nav>
     <%= yield %>
   </body>
 </html>
