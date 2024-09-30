@@ -25,7 +25,7 @@ Item.create(
     category: "Appetizers",
     price: 12.99,
     calories: 1200,
-    photo_url: 'https://unsplash.com/photos/a-cheeseburger-and-fries-on-a-plate-on-a-table-ZTtaJjiF_0M'
+    photo_url: 'https://source.unsplash.com/ZTtaJjiF_0M',
     eightysix: false,
     archived: false,
 )
@@ -36,7 +36,7 @@ Item.create(
     category: "Salads",
     price: 10.99,
     calories: 500,
-    photo_url: 'https://unsplash.com/photos/a-cheeseburger-and-fries-on-a-plate-on-a-table-ZTtaJjiF_0M'
+    photo_url: 'https://source.unsplash.com/ZTtaJjiF_0M',
     eightysix: false,
     archived: false,
 )
@@ -47,7 +47,7 @@ Item.create(
     category: "Sandwiches",
     price: 6.99,
     calories: 600,
-    photo_url: 'https://unsplash.com/photos/a-cheeseburger-and-fries-on-a-plate-on-a-table-ZTtaJjiF_0M'
+    photo_url: 'https://source.unsplash.com/ZTtaJjiF_0M',
     eightysix: false,
     archived: false,
 )
@@ -58,7 +58,7 @@ Item.create(
     category: "Entrees",
     price: 15.99,
     calories: 825,
-    photo_url: 'https://unsplash.com/photos/a-cheeseburger-and-fries-on-a-plate-on-a-table-ZTtaJjiF_0M'
+    photo_url: 'https://source.unsplash.com/ZTtaJjiF_0M',
     eightysix: false,
     archived: false,
 )
@@ -69,7 +69,7 @@ Item.create(
     category: "Kids",
     price: 4.99,
     calories: 300,
-    photo_url: 'https://unsplash.com/photos/a-cheeseburger-and-fries-on-a-plate-on-a-table-ZTtaJjiF_0M'
+    photo_url: 'https://source.unsplash.com/ZTtaJjiF_0M',
     eightysix: false,
     archived: false,
 )
