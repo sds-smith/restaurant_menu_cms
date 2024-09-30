@@ -11,6 +11,7 @@
                 <th>Price</th>
                 <th>Calories</th>
                 <th>Description</th>
+                <th>Category</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -24,6 +25,7 @@
                     <td><%= item.price %></td>
                     <td><%= item.calories %></td>
                     <td><%= item.description %></td>
+                    <td><%= item.category %></td>
                     <td> 
                         <a href="<%= item_path(item) %>" >Details</a> | 
                         <a href="<%= edit_item_path(item) %>" >Edit</a> | 
