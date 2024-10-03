@@ -29,6 +29,17 @@
         <fieldset>
             <div class="form-group row">
                 <label class="col-sm-2 control-label">
+                    Item Category:
+                </label>
+                <div class="col-sm-10">
+                    <%= f.select :category, ['Appetizers','Salads','Sandwiches','Entrees','Kids' ], :prompt => 'Select Category' %>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div class="form-group row">
+                <label class="col-sm-2 control-label">
                     Item Price:
                 </label>
                 <div class="col-sm-10">
